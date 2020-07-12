@@ -31,7 +31,7 @@ export const FormWithCustomHook = () => {
                 <input 
                     type="text" 
                     name="name" 
-                    classname="form-control" 
+                    className="form-control" 
                     placeholder="Tu nombre" 
                     autocomplete="off" 
                     value={name} 
@@ -41,7 +41,7 @@ export const FormWithCustomHook = () => {
                 <input 
                     type="text" 
                     name="email" 
-                    classname="form-control" 
+                    className="form-control" 
                     placeholder="email@gmail.com" 
                     autocomplete="off" 
                     value={email} 
@@ -51,7 +51,7 @@ export const FormWithCustomHook = () => {
                 <input 
                     type="password" 
                     name="password" 
-                    classname="form-control" 
+                    className="form-control" 
                     placeholder="*****" 
                     autocomplete="off" 
                     value={password} 
