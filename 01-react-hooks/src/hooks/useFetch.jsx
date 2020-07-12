@@ -26,7 +26,7 @@ export const useFetch = (url) => {
                     console.log("Estado no se ha cambiado debido a que el componente se ha desmontado");
                 }
                 
-            },4000);
+            },1000);
             
         }));
     }, [url]);
