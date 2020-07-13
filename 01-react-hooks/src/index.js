@@ -1,7 +1,10 @@
 import React from 'react';
 import './style.css';
 import ReactDOM from 'react-dom';
-import { CallbackHook } from './components/06-memos/CallbackHook';
+import { TodoApp } from './components/08-useReducer/TodoApp';
+
+//import { CallbackHook } from './components/06-memos/CallbackHook';
+//import { Padre } from './components/07-tarea-memo/Padre';
 // import { HooksApp } from './HooksApp';
 //import { SimpleForm} from './components/02-useEffect/SimpleForm';
 //import { CounterApp} from './components/01-useState/CounterApp';
@@ -16,6 +19,8 @@ import { CallbackHook } from './components/06-memos/CallbackHook';
 
 
 ReactDOM.render(
-    <CallbackHook />,
+    <TodoApp />,
   document.getElementById('root')
 );
+
+//import './components/08-useReducer/intro-reducer';
