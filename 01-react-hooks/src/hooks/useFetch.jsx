@@ -4,9 +4,9 @@ import { useEffect } from 'react';
 
 export const useFetch = (url) => {
     const isMounted = useRef(true);
-   const [state, setState] = useState({data: null, loading: true, error: null});
+    const [state, setState] = useState({ data: null, loading: true, error: null });
 
-    useEffect(()=> {
+    useEffect(() => {
 
         return () => {
             isMounted.current = false;
@@ -15,20 +15,26 @@ export const useFetch = (url) => {
     }, []);
 
     useEffect(() => {
-        setState({data: null, loading: true, error: null});
+        setState({ data: null, loading: true, error: null });
         fetch(url).then(resp => resp.json().then(data => {
-            setTimeout(()=>{
+            setTimeout(() => {
                 // No cambia el estado si el padre ya no renderiza este componente
-                if(isMounted.current) {
-                    setState({loading: false,error: null,data});
+                if (isMounted.current) {
+                    setState({ loading: false, error: null, data });
                 }
                 else {
                     console.log("Estado no se ha cambiado debido a que el componente se ha desmontado");
                 }
-                
-            },1000);
-            
-        }));
+
+            }, 1000);
+
+        })).catch(() => {
+            setState({
+                data: null,
+                loading: false,
+                error: 'No se pudo cargar la info'
+            });
+        });
     }, [url]);
 
     return state;
