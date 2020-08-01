@@ -50,7 +50,7 @@ export const TodoApp = () => {
             <div style={{ display: 'flex' }}>
                 <div style={{ flex: 1 }}>
                     <ul> 
-                        <TodoList TodoListItem={todos} handleDelete={handleDelete} handleToggle={handleToggle} /> 
+                        <TodoList todoListItem={todos} handleDelete={handleDelete} handleToggle={handleToggle} />
                     </ul>
                 </div>
                 <div style={{ flex: 1 }}>
