@@ -15,9 +15,6 @@ describe('Pruebas en <TodoAdd />', ()=> {
         />
     );
 
-    test('debe de mostrarse correctamente', () => {
-        expect(wrapper).toMatchSnapshot();
-    });
 
     test('No debe de llamar handleAddTodo', () => {
         const formSubmit = wrapper.find('form').prop('onSubmit');

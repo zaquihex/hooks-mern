@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <todoApp /> debe de mostrarse correctamente 1`] = `
+<div>
+  <h1>
+    TodoApp 
+    0
+  </h1>
+  <hr />
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <ul>
+        <TodoList
+          handleDelete={[Function]}
+          handleToggle={[Function]}
+          todoListItem={Array []}
+        />
+      </ul>
+    </div>
+    <div
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <TodoAdd
+        handleAddTodo={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;

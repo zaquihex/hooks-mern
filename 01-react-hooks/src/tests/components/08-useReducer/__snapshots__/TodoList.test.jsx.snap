@@ -6,6 +6,7 @@ Array [
     handleDelete={[MockFunction]}
     handleToggle={[MockFunction]}
     index={0}
+    key="0"
     todo={
       Object {
         "desc": "Aprender React",
@@ -18,6 +19,7 @@ Array [
     handleDelete={[MockFunction]}
     handleToggle={[MockFunction]}
     index={1}
+    key="1"
     todo={
       Object {
         "desc": "Aprender Mongo",
