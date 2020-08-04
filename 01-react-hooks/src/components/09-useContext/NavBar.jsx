@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link, NavLink, Redirect } from 'react-router-dom';
 
 export const NavBar = () => {

@@ -1,15 +1,8 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Redirect
-} from "react-router-dom";
-import { AboutScreen } from './AboutScreen';
-import { HomeScreen } from './HomeScreen';
-import { LoginScreen } from './LoginScreen';
-import { NavBar } from './NavBar';
-
+import {NavBar} from "./NavBar";
+import {HomeScreen} from "./HomeScreen";
+import {AboutScreen} from "./AboutScreen";
+import {LoginScreen} from "./LoginScreen";
 
 export const AppRouter = () => {
     return (
